@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root :to => 'bloodsugars#index'
+  root :to => 'media_contents#index'
   resources :bloodsugars
-  resources :media_contents, only: [:create]
+  resources :media_contents, only: [:create, :index, :new]
 end
